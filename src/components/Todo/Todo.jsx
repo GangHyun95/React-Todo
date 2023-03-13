@@ -21,9 +21,11 @@ export default function Todo({ todo, onUpdate, onDelete }) {
       <label htmlFor={id} className={styles.text}>
         {text}
       </label>
-      <button onClick={handleDelete} className={styles.button}>
-        <FaTrashAlt />
-      </button>
+      <span className={styles.icon}>
+        <button onClick={handleDelete} className={styles.button}>
+          <FaTrashAlt />
+        </button>
+      </span>
     </li>
   );
 }

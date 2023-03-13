@@ -1,9 +1,16 @@
 import React from "react";
+import { useDarkMode } from "../../context/DarkModeContext";
 import styles from "./Header.module.css";
+import { HiMoon, HiSun } from "react-icons/hi";
 
 export default function Header({ filters, filter, onFilterChange }) {
+  const { darkMode, toggleDarkMode } = useDarkMode();
   return (
     <header className={styles.header}>
+      <button className={styles.toggle} onClick={toggleDarkMode}>
+        {!darkMode && <HiMoon />}
+        {darkMode && <HiSun />}
+      </button>
       <ul className={styles.filters}>
         {filters.map((value, index) => (
           <li key={index}>
@@ -11,7 +18,6 @@ export default function Header({ filters, filter, onFilterChange }) {
               className={`${styles.filter} ${
                 filter === value && styles.selected
               }`}
-              qhkwnsek
               onClick={() => onFilterChange(value)}
             >
               {value}
