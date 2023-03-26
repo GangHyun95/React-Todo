@@ -36,19 +36,6 @@ body {
   );
 }
 
-#root {
-  width: 100%;
-  height: 60%;
-  max-width: 500px;
-  background-color: var(--color-bg-dark);
-  overflow: hidden;
-  border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  -webkit-box-shadow: 5px 5px 21px 4px rgba(0, 0, 0, 0.45);
-  box-shadow: 5px 5px 21px 4px rgba(0, 0, 0, 0.45);
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
