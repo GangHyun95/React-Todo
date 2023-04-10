@@ -6,9 +6,8 @@ React 연습용으로 간단한 TodoList 를 구현하였습니다.
 ## 🔨 사용 기술
 
 * `React`
-* `tanstack/react-query`
+* `Post Css`
 * `JavaScript`
-* `axios`
 * `react-icons`
 * `Tailwind CSS`
 * `Context API`
