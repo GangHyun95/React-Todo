@@ -11,6 +11,7 @@ React 연습용으로 간단한 TodoList 를 구현하였습니다.
 * `react-icons`
 * `Tailwind CSS`
 * `Context API`
+* `uuid`
 
 ## 📌 주요 기능
 
